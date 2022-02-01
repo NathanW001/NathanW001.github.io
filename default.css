@@ -1,0 +1,281 @@
+:root{
+    --color1: #000000;
+    --color2: #ffffff;
+    --color3: #1b1a1c;
+    --color4: #e6caef;
+    --color5: #c488ff;
+    --color6: #f7ea00;
+    --color7: #ad59ff;
+    --color8: #8e29f3;
+    --color9: #242325;
+    
+
+    --mainText:#000000;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: var(--color3);
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kanit', sans-serif; 
+}
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+p { font-size: 24px;}
+
+
+a, p, li, span, label, input, textarea{
+    color: var(--mainText);
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
+}
+
+.s1{
+    overflow: auto;
+    background-color: var(--color3);
+}
+
+.s2{
+    overflow: auto;
+    background-color: var(--color9);
+}
+
+#c1{
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+
+#c2{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: auto;
+}
+
+.flexbox{
+    display: flex;
+    flex: 0;
+    justify-content: flex-start;
+}
+
+#aboutme{
+    flex-direction: column;
+    align-items: left;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+}
+
+#flex2{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 10px;
+    background-color: var(--color4);
+    border: 2px solid var(--color1);
+    width: 80%;
+}
+
+#titlediv{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    position: relative;
+}
+
+.title{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+    position: relative;
+}
+
+#who{
+    order: 1;
+    text-align: left;
+    position: relative;
+    width: 30%;
+}
+
+#p1{
+    position: relative;
+    text-align: left;
+    order: 3;
+    margin-right: 50px;
+
+}
+
+.padding{
+    padding-top: 50px;
+}
+
+#pad1{
+    order: 2;
+}
+
+#pad2{
+    order: 4;
+}
+
+.txt{
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#persongif{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#link1{
+    order: 1;
+    color: var(--mainText);
+    text-decoration: none;
+}
+
+#link1:hover{
+    font-weight: bold;
+}
+
+#link2{
+    order: 2;
+    color: var(--mainText);
+    text-decoration: none;
+}
+
+#link2:hover{
+    font-weight: bold;
+}
+
+#link3{
+    order: 3;
+    color: var(--mainText);
+    text-decoration: none;
+}
+
+#link3:hover{
+    font-weight: bold;
+}
+
+#link4{
+    order: 4;
+    color: var(--mainText);
+    text-decoration: none;
+}
+
+#link4:hover{
+    font-weight: bold;
+}
+
+#square1{
+    position: absolute;
+    background-color: var(--color5);
+    z-index: 0;
+    height: 70%;
+    width: 45%;
+    top: 10%;
+    left: 27%;
+}
+
+#square2{
+    position: absolute;
+    background-color: var(--color7);
+    z-index: 0;
+    height: 70%;
+    width: 45%;
+    bottom: 10%;
+    left: 30%;
+}
+
+#aboutdiv{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    position: relative;
+    height: 100%;
+}
+
+#square3{
+    position: absolute;
+    background-color: var(--color7);
+    z-index: 0;
+    height: 60%;
+    width: 25%;
+    bottom: 15%;
+    left: 36%;
+}
+
+#square4{
+    position: absolute;
+    background-color: var(--color8);
+    z-index: 0;
+    height: 60%;
+    width: 25%;
+    top: 15%;
+    right: 36%;
+}
+
+#square5{
+    position: absolute;
+    background-color: var(--color5);
+    z-index: 0;
+    height: 80%;
+    width: 100%;
+    top: 10%;
+    right: 20%;
+    border-right: 5px var(--color7) solid;
+    border-bottom: 5px var(--color7) solid;
+    border-left: 5px var(--color5) solid;
+    border-top: 5px var(--color5) solid; 
+}
+
+#square6{
+    position: absolute;
+    background-color: var(--color5);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    border-right: 10px var(--color7) solid;
+    border-bottom: 10px var(--color7) solid;
+    border-left: 10px var(--color5) solid;
+    border-top: 10px var(--color5) solid; 
+}
+
+#who2{
+    position: relative;
+}
+
+.highlight{
+    color: var(--color6);
+}
+
