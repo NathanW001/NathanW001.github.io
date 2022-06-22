@@ -20,7 +20,7 @@ function App() {
             <div>
               <h1>Who Am I?</h1>
               <p className='Body-paragraph'>My name is Nathan Wootton. I'm an undergraduate in my 3rd year at the University of Toronto's St. George Campus. I am currently pursuing a specialist in computer science, and am an ambitious developer.  Some of my hobbies include programming, playing the saxophone, taking care of cacti and succulents, and playing and competing in video games.</p>
-              <p className='Body-paragraph'>Me when when you when you r mom</p>
+              <p className='Body-paragraph'>The rest of my about me goes here</p>
             </div>
             <div className='Image-wrapper'>
               <img src={require("./images/nathan.jpg")} alt="Nathan"/>
