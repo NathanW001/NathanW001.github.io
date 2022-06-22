@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import ExpandedNav from './components/ExpandedNav'
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(false)
