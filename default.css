@@ -1,7 +1,7 @@
 :root{
     --color1: #000000;
     --color2: #ffffff;
-    --color3: #1b1a1c;
+    --color3: #ffffff;
     --color4: #e6caef;
     --color5: #c488ff;
     --color6: #f7ea00;
@@ -202,6 +202,7 @@ a, p, li, span, label, input, textarea{
     width: 45%;
     top: 10%;
     left: 27%;
+    border-radius: 25px;
 }
 
 #square2{
@@ -212,6 +213,7 @@ a, p, li, span, label, input, textarea{
     width: 45%;
     bottom: 10%;
     left: 30%;
+    border-radius: 25px;
 }
 
 #aboutdiv{
@@ -231,6 +233,7 @@ a, p, li, span, label, input, textarea{
     width: 25%;
     bottom: 15%;
     left: 36%;
+    border-radius: 25px;
 }
 
 #square4{
@@ -241,6 +244,7 @@ a, p, li, span, label, input, textarea{
     width: 25%;
     top: 15%;
     right: 36%;
+    border-radius: 25px;
 }
 
 #square5{
@@ -255,6 +259,7 @@ a, p, li, span, label, input, textarea{
     border-bottom: 5px var(--color7) solid;
     border-left: 5px var(--color5) solid;
     border-top: 5px var(--color5) solid; 
+    border-radius: 25px;
 }
 
 #square6{
@@ -269,6 +274,7 @@ a, p, li, span, label, input, textarea{
     border-bottom: 10px var(--color7) solid;
     border-left: 10px var(--color5) solid;
     border-top: 10px var(--color5) solid; 
+    border-radius: 25px;
 }
 
 #who2{
