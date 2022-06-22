@@ -1,0 +1,125 @@
+:root{
+  --color1: #eeedde;
+  --color2: #b4cace;
+  --color3: #203239;
+  --color4: #141e27;
+  --color5: #b5ccc9;
+  --color6: #ffffff;
+  --color7: #53494e;
+}
+
+.App {
+  text-align: left;
+}
+
+.Flexbox{
+  display: flex;
+}
+
+.Flexbox-body{
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.Image-wrapper {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  
+}
+
+.App-header {
+  background-color: var(--color1);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--color4);
+  padding-top: 10vh;
+}
+
+.App-body {
+  background-color: var(--color5);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 1.5vmin);
+  color: var(--color4);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.Nav-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar {
+  color: var(--color2);
+  background-color: var(--color3);
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding-left: 25px;
+  padding-right: 10vh;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+}
+
+.Expanded-Nav {
+  right: 0;
+  min-width: 40vh;
+  height: 100%;
+  position: fixed;
+  color: var(--color2);
+  background-color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 10vh;
+  padding-right: 5rem;
+  border-left: 2px solid var(--color4);
+}
+
+.Clickable {
+  cursor: pointer;
+}
+
+.Nav-bars{
+  margin-right: 5rem;
+}
+
+img {
+  width: auto;
+  height: 100%;
+  max-width: 40vh;
+  border: 5px solid var(--color4)
+}
+
+/* phone screen stuff */
+@media only screen and (max-width: 800px) {
+  .Flexbox-body{
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+  }
+
+  .Body-paragraph{
+    min-width: 100%;
+  }
+
+  .Expanded-Nav {
+    width: 100%;
+    border-left-style: none;
+  }
+
+  
+}
