@@ -1,11 +1,11 @@
 :root{
-  --color1: #eeedde;
-  --color2: #b4cace;
-  --color3: #203239;
-  --color4: #141e27;
-  --color5: #b5ccc9;
-  --color6: #ffffff;
-  --color7: #53494e;
+  --color1: #C9E2EF;
+  --color2: #C9E2EF;
+  --color3: #222A38;
+  --color4: #13334A;
+  --color5: #bed4e0;
+  --color6: #fff8d2;
+  --color7: #802bb1;
 }
 
 .App {
@@ -22,6 +22,54 @@
   gap: 50px;
 }
 
+.Flexbox-myapps{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.App-appbox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 400px;
+  min-height: 250px;
+  background-color: #222a38a4;
+  color: var(--color1);
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.App-applink{
+  color: var(--color3)
+}
+
+.App-applink:link{
+  text-decoration: none;
+}
+
+.App-topbuttons{ 
+  padding-top: 15px;
+  gap:50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.App-appbutton{
+  text-decoration: none;
+  color: var(--color6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-applinkname{
+  background-color: #222a38b9;
+}
+
 .Image-wrapper {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -30,7 +78,7 @@
 
 .App-header {
   background-color: var(--color1);
-  min-height: 50vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,6 +86,8 @@
   font-size: calc(10px + 2vmin);
   color: var(--color4);
   padding-top: 10vh;
+  background-color: var(--color6);
+  border-bottom: 5px solid var(--color4)
 }
 
 .App-body {
@@ -47,10 +97,39 @@
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(15px + 1.5vmin);
   color: var(--color4);
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.App-myapps {
+  background-color: var(--color1);
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(15px + 1.5vmin);
+  color: var(--color4);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.App-contact {
+  background-color: var(--color5);
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(15px + 1.5vmin);
+  color: var(--color4);
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.App-linkbutton {
+  text-align: center;
+  border-radius: 50%;
 }
 
 .Nav-flexbox {
@@ -68,6 +147,7 @@
   gap: 25px;
   padding-left: 25px;
   padding-right: 10vh;
+  padding-bottom: 25px;
   position: fixed;
   justify-content: space-between;
   top: 0;
@@ -84,7 +164,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-top: 10vh;
+  padding-top: 15vh;
   padding-right: 5rem;
   border-left: 2px solid var(--color4);
 }
@@ -95,6 +175,10 @@
 
 .Nav-bars{
   margin-right: 5rem;
+}
+
+.Button{
+  cursor: pointer;
 }
 
 img {
@@ -120,6 +204,4 @@ img {
     width: 100%;
     border-left-style: none;
   }
-
-  
 }

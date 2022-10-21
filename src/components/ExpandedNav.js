@@ -1,4 +1,5 @@
 import NavBar from './NavBar'
+import Button from './Button'
 import React from 'react'
 
 function ExpandedNav({ onClickNav }) {
@@ -8,9 +9,9 @@ function ExpandedNav({ onClickNav }) {
       {/* <div className='Navbar'/> */}
       <div>
         <div className='Expanded-Nav'> 
-          <h2>About me</h2>
-          <h2>Option 2</h2>
-          <h2>Option 3</h2>
+          <Button onClickButton={() => window.location.replace("/#aboutMe")} buttonText="About Me"/>
+          <Button onClickButton={() => window.location.replace("/#MyApps")} buttonText="Personal Projects"/>
+          {/* <h2>Option 3</h2> */}
         </div>
       </div>
       <NavBar onClickNav={onClickNav}/>
